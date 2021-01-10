@@ -4,7 +4,7 @@
 <?php
 $total = $_REQUEST['total'] ?? '';
 include_once "stripe/init.php";
-\Stripe\Stripe::setApiKey("sk_test_51I2u9wB5FY26I1UyBvzpjojtfoYOsK6BqjOoyH7BRvoUz3oMv1NmFhR3oAMLIHTSnNxOMmSJwSn9LLX66vs64XU4002m7LZBAe");
+\Stripe\Stripe::setApiKey("sk_test_............................");
 $toke = $_POST['stripeToken'];
 $charge = \Stripe\Charge::create([
     'amount' => $total,
